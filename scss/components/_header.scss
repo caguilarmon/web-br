@@ -1,0 +1,37 @@
+$header-logo-width: 130px;
+
+.app-header {
+    @include flex(space-between, center);
+    width: 100%;
+    height: $header-height;
+    position: fixed;
+    padding: 0 $gutter-1;
+    background-color: $blue-1;
+    top: 0;
+
+    img {
+        width: $header-logo-width;
+    }
+
+    button {
+        &:first-child {
+            margin-right: $gutter-1;
+        }
+        
+        &:nth-child(2) {
+            font-weight: $font-bold;
+        }    
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .log-in {
+        @include app-button($blue-2, 1);
+    }
+
+    .sign-up {
+        @include app-button($green-1, 1);
+    }
+}

@@ -1,0 +1,111 @@
+$col-height-red: 485px;
+$col-height-purple: 560px;
+$col-height-light-blue: 492px;
+$img-margin-bottom-purple: -60px;
+$img-margin-top-red: 80px;
+$home-block-h2: 32px;
+$home-block-h3: 30px;
+
+.home-block {
+	@include flex(center, center);
+	padding:  $gutter-4 $gutter-7;
+
+	&__col {
+		padding: 0 $gutter-1;
+		width: 50%;
+
+		&--green-text {
+			color: green;
+		}
+
+		&--height-red {
+			height: $col-height-red;
+		}
+
+		&--height-purple {
+			height: $col-height-purple;
+		}
+
+		&--height-light-blue {
+			height: $col-height-light-blue;
+		}					
+	}
+
+	&__description {
+		line-height: 1.2;
+		font-size: 22px;
+	}
+
+	&__image {
+		display: block;
+		height: auto;
+		margin: 0 auto;
+
+		&--red {
+			margin-top: $img-margin-top-red; 
+		}
+
+		&--purple {
+    		margin-bottom: $img-margin-bottom-purple;
+		}
+
+		&--light-blue {
+			background: url(../img/home/block-6-img.jpg) no-repeat center center;
+		    background-size: cover;
+		}
+	
+	}
+
+	&__button-red {
+		@include app-button($red-2, .8)
+	}
+
+	&__button-purple {
+		@include app-button($purple-2, .8)
+	}	
+
+	&__button-light-blue {
+		@include app-button($light-blue-2, .8)
+	}		
+
+	&--red {
+		background-color: $red-1;
+	}
+
+	&--purple {
+		background-color: $purple-1;
+	}
+
+	&--light-blue {
+		background-color: $light-blue-1;
+	}
+
+	&--no-padding-right {
+		overflow: hidden;
+		padding-right: 0;
+	}
+
+	&--no-padding-left {
+		overflow: hidden;
+		padding-left: 0;
+	}
+
+	&--elements-separation {
+		margin: 20px 0;
+	}	
+
+	& %h-tags {
+		font-weight: bold;	
+	}
+
+	& h2 {
+		@extend %h-tags;
+		font-size: $home-block-h2;
+	}
+
+	& h3 {
+		@extend %h-tags;
+		font-size: $home-block-h3;
+	}
+
+}

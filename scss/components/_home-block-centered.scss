@@ -1,0 +1,64 @@
+// Generic
+$home-block-centered-button-font-size: 20px;
+$home-block-centered-p-font-size: 23px;
+$home-block-centered-width: 75%;
+$home-block-centered-line-height: 1.2;
+
+//Main
+$home-block-centered-main-h1: 38px;
+$home-block-centered-main-p: 22px;
+$home-block-centered-main-width: 100%;
+$home-block-centered-main-elements-width: 70%;
+
+.home-block-centered {
+	@include flex(center, center);
+	@include flex-flow(column, wrap);	
+	padding:  $gutter-4 $gutter-7;
+	color: $black-1;
+	width: $home-block-centered-width;
+	margin: 0 auto;
+	line-height: $home-block-centered-line-height;
+
+	&--elements-separation {
+		@extend .home-block--elements-separation;
+	}
+
+
+	&__button-green {
+		@include app-button($green-1, .8);
+		font-weight: $font-bold;
+		font-size: $home-block-centered-button-font-size;
+	    padding: $gutter-1 $gutter-2;
+	}
+
+	& a {
+		color: $light-blue-3;
+	}
+
+	&__p-lg {
+		font-size: $home-block-centered-p-font-size;
+	}
+}	
+
+.home-block-centered--main {
+	@extend .home-block-centered;
+	background: url(../img/home/block-1-img.jpg) no-repeat center center;
+	background-size: cover;
+	width: $home-block-centered-main-width;
+	color: $white;
+
+
+	& h1 {
+		font-size: $home-block-centered-main-h1;
+		width: $home-block-centered-main-elements-width;
+	}
+	
+	& a {
+		color: $light-blue-4;
+	}
+
+	& p {
+		font-size: $home-block-centered-main-p;
+		width: $home-block-centered-main-elements-width;
+	}
+}

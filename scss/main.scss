@@ -1,0 +1,17 @@
+// Partials
+@import "partials/reset.scss";
+@import "partials/flex";
+
+// Modules
+@import "modules/variables";
+@import "modules/global";
+
+// Components
+@import "components/button";
+@import "components/header";
+@import "components/home-block";
+@import "components/home-block-centered";
+@import "components/footer";
+
+//Pages
+@import "pages/home";

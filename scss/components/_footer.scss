@@ -1,0 +1,44 @@
+$footer-font-color: #999;
+$footer-hover-font-color: #999;
+
+.footer-main {
+	padding:  $gutter-4 $gutter-7;
+	text-align: center;
+    color: $footer-font-color;
+    font-size: 17px;
+
+	& ul {
+	    list-style: none;
+	    margin: .5em 0 0;
+	    padding: 0;
+	    display: block;
+	}
+
+	& li {
+    	display: inline-block;
+    	margin: 0 6px;
+	}
+
+	& a {
+    	color: $footer-font-color;
+
+    	&:hover {
+    		color: #333;
+    	}
+	}
+
+	& img {
+	    width: 150px;
+	    display: inline-block;
+	    vertical-align: top;
+	}
+
+	& div {
+		margin-top: 15px;
+
+		& img {
+			margin-right: $gutter-1;
+		}
+	}
+
+}

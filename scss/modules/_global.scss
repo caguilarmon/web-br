@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: $font-size-default;
+    padding-top: $header-height;
+    color: $white;
+}
+
+button {
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+img.responsive-image {
+   max-width: 100%;
+   height: auto;
+}
+
+.center-aligned-text {
+    text-align: center;
+}
+
+.right-aligned-text {
+    text-align: right;
+}
+
+.bold-text {
+    font-weight: $font-bold;
+}
+
+.button-hover-opacity {
+    &:hover {
+        opacity: $button-hover-opacity;
+    }
+}
