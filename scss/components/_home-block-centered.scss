@@ -42,7 +42,7 @@ $home-block-centered-main-elements-width: 70%;
 
 .home-block-centered--main {
 	@extend .home-block-centered;
-	background: url(../img/home/block-1-img.jpg) no-repeat center center;
+	background: url(../assets/img/home/block-1-img.jpg) no-repeat center center;
 	background-size: cover;
 	width: $home-block-centered-main-width;
 	color: $white;

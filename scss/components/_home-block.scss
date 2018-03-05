@@ -3,8 +3,6 @@ $col-height-purple: 560px;
 $col-height-light-blue: 492px;
 $img-margin-bottom-purple: -60px;
 $img-margin-top-red: 80px;
-$home-block-h2: 32px;
-$home-block-h3: 30px;
 
 .home-block {
 	@include flex(center, center);
@@ -50,7 +48,7 @@ $home-block-h3: 30px;
 		}
 
 		&--light-blue {
-			background: url(../img/home/block-6-img.jpg) no-repeat center center;
+			background: url(../assets/img/home/block-6-img.jpg) no-repeat center center;
 		    background-size: cover;
 		}
 	
@@ -69,11 +67,11 @@ $home-block-h3: 30px;
 	}		
 
 	&--red {
-		background-color: $red-1;
+		background-color: rgb(233, 91, 75);
 	}
 
 	&--purple {
-		background-color: $purple-1;
+		background-color: rgb(123, 143, 209);
 	}
 
 	&--light-blue {
@@ -96,16 +94,6 @@ $home-block-h3: 30px;
 
 	& %h-tags {
 		font-weight: bold;	
-	}
-
-	& h2 {
-		@extend %h-tags;
-		font-size: $home-block-h2;
-	}
-
-	& h3 {
-		@extend %h-tags;
-		font-size: $home-block-h3;
 	}
 
 }

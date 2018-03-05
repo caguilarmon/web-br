@@ -1,15 +1,30 @@
+//No es necesario, solo si uso placeholder en _home-block.scss en lugar de class o sea: &home-block. 
+//Pero debo incluir extend a cada uno de los anidados
+
+// .hom-block {  
+// 	@extend .home-block;
+// }
+
+
+// Con placeholders es así y si es necesario. Debo incluir extend a cada uno de los anidados.
+
+// .home-block {  
+// 	@extend .home-block;
+// }
+
+
 // Heading Tags
-// $home-block-h2: 32px;
-// $home-block-h3: 30px;
+$h1: 32px;
+$h2: 30px;
 
 
-// .home-block h2 {
-// 	@extend %h-tags;
-// 	font-size: $home-block-h2;
+.home-block h1 {
+	@extend %h-tags;
+	font-size: $h1;
 
-// }
+}
 
-// .home-block h3 {
-// 	@extend %h-tags;
-// 	font-size: $home-block-h3;
-// }
+.home-block h2 {
+	@extend %h-tags;
+	font-size: $h2;
+}
