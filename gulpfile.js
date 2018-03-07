@@ -4,9 +4,6 @@ var sass = require('gulp-sass');
 var runSequence = require('run-sequence');
 var argv = require('yargs').argv;
 var del = require('del');
-// NEW
-var browserSync = require('browser-sync').create();
-var reload = browserSync.reload;
 
 
 gulp.task('server', function() {
@@ -29,25 +26,25 @@ gulp.task('sass', function() {
 		.pipe(connect.reload());
 });
 
+gulp.task('html', function() {
+
+    gulp.src('*.html')
+        .pipe(gulp.dest('./dist'))
+        .pipe(connect.reload());
+});
+
 gulp.task('watch', function() {
     
-    // NEW -  Serve files from the root of this project
-    browserSync.init({
-        server: {
-            baseDir: "./"
-        }
-    });
-
 	gulp.watch('./scss/**/*.scss', ['sass']);
-    gulp.watch("*.html").on("change", reload); // NEW
+    gulp.watch(['*.html'], ['html']);
 });
 
 gulp.task('copy', function() {
 	gulp.src('./index.html')
-	.pipe(gulp.dest('./dist'));
+	   .pipe(gulp.dest('./dist'));
 
 	gulp.src('./assets/img/**/*')
-	.pipe(gulp.dest('./dist/assets/img'));
+	   .pipe(gulp.dest('./dist/assets/img'));
 });
 
 gulp.task('build', function() {
