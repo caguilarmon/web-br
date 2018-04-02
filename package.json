@@ -1,0 +1,20 @@
+{
+  "name": "web-br",
+  "version": "1.0.0",
+  "description": "Practica",
+  "main": "index.js",
+  "repository": "https://github.com/caguilarmon/web-br.git",
+  "author": "Carlos Aguilar <caguilar@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-html-partial": "^1.0.1",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
+}

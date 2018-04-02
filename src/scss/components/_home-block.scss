@@ -1,0 +1,96 @@
+// Home Block General
+$home-block-padding-top: 70px;
+$home-block-padding-bottom: 50px;
+
+// Home Block 1
+$home-block-1-font-size: 30px;
+$home-block-1-line-height: 40px;
+$home-block-1-font-weight: 200;
+$home-block-1-letter-spacing: 1px;
+$home-block-1-margin-top: 10px;
+
+// Home Block 3
+$home-block-3-content-font-size: 21px;
+$home-block-3-lines-margin: 35px;
+
+
+
+// Home Block General
+.home-block{
+    padding: $home-block-padding-top 15px $home-block-padding-bottom;
+}
+
+
+// Home Block 1
+.home-block-1 {
+
+	&__content {
+	    font-size: $home-block-1-font-size;
+	    line-height: $home-block-1-line-height;
+	    font-weight: $home-block-1-font-weight;
+        letter-spacing: $home-block-1-letter-spacing;
+        margin-top: $home-block-1-margin-top;
+    }
+
+    &__buttons-container {
+    	margin-top: 35px;
+    }
+
+    .button {
+        &:first-child {
+            margin-right: $gutter-2;
+        }
+    }    
+}
+
+// Home Block 2
+.home-block-2 {
+	background-color: $sand-1;
+}
+
+
+// Home Block 3
+.home-block-3 {
+	
+	&__title {
+		font-weight: 500;
+		text-align: center;
+		color: $black-4;
+		letter-spacing: 2px;
+
+		&:before,
+		&:after {
+    		content: '';
+		    margin-bottom: 9px;
+			width: 90px;
+			border: solid $sand-2 3px;
+			display: inline-block;
+		}
+
+		&:before {
+			margin-right: $home-block-3-lines-margin;
+		}
+
+		&:after {
+			margin-left: $home-block-3-lines-margin;
+		}
+	}
+
+	&__content {
+		text-align: center;
+		display: block;
+		font-size: $home-block-3-content-font-size;
+		color: $green-1;
+		font-weight: 600;
+		letter-spacing: 2px;
+
+		&:hover {
+			color: $green-2;
+		}
+	}
+
+	&--vertical-margin {
+		margin-bottom: 60px;
+	}
+}
+

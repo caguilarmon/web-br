@@ -1,0 +1,28 @@
+$app-header-height: 114px;
+$app-header-link-font-size: 13px;
+
+.app-header {
+    &__wrapper {
+        @include flex(space-between, center);
+        // background-color: #eee;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__link {
+        @include flex(null, center);
+        padding: 0 $gutter-1;
+        height: $app-header-height;
+        color: $black-2;
+        font-size: $app-header-link-font-size;
+        font-weight: bold;
+        border-bottom: solid 3px $white;
+
+        &:hover {
+            color: $orange-1;
+            border-bottom: solid 3px $orange-1;
+        }
+    }
+}

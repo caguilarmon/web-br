@@ -1,0 +1,15 @@
+// Vendors
+@import '../../node_modules/bootstrap/scss/bootstrap';
+
+// Partials
+@import 'partials/flex';
+
+// Global
+@import 'modules/variables';
+@import 'modules/global';
+
+// Components
+@import 'components/header';
+@import 'components/button';
+@import 'components/home-block';
+// @import 'components/home-block-1';

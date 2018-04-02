@@ -1,0 +1,41 @@
+$button-padding-top-bottom: 10px;
+$button-padding-sides: 30px;
+$button-font-size: 15px;
+
+@mixin app-button() {
+    padding: $button-padding-top-bottom $button-padding-sides;
+    display: inline-block; 
+    text-transform: uppercase;       
+}
+
+@mixin app-button-style($bg-color, $font-color, $border-color) {
+    color: $font-color;
+    border: solid 2px $border-color;
+    background-color: $bg-color;
+}
+
+
+.button {
+	@include app-button();
+	@include app-button-style(transparent, $white, $white);
+
+	&:hover {
+		@include app-button-style($white, $black, $white);
+	}
+
+	&--orange {
+		@include app-button-style($orange-1, $white, $orange-1);
+
+		&:hover{
+			@include app-button-style($orange-2, $white, $orange-2);
+		}
+	}
+
+	&--orange-transparent {
+		@include app-button-style(transparent, $orange-1, $orange-1);
+
+		&:hover {
+			@include app-button-style($orange-1, $white, $orange-1);
+		}
+	}
+}

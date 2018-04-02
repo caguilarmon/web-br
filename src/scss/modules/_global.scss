@@ -1,0 +1,27 @@
+ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    &:hover,
+    &:link,
+    &:active,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    font-size: $h2-font-size;
+    line-height: $h2-line-height;
+    padding: $h2-padding;
+    font-weight: $h2-font-weight;
+}
+
+img.responsive-image {
+   max-width: 100%;
+   height: auto;
+}
